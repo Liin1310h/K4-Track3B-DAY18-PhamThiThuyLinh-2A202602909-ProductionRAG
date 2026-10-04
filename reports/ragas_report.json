@@ -1,0 +1,91 @@
+{
+  "aggregate": {
+    "faithfulness": 0.7083333333333333,
+    "answer_relevancy": 0.6341368654767062,
+    "context_precision": 0.9541666665997915,
+    "context_recall": 0.7666666666666666
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Bao lâu phải đổi mật khẩu một lần?",
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "avg_score": 0.3958,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Khi phát hiện malware trên máy, nhân viên có nên tự xử lý không?",
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "avg_score": 0.4167,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Một nhân viên Senior có 9 năm thâm niên được nghỉ bao nhiêu ngày phép năm và lương trong khoảng nào?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.0,
+      "avg_score": 0.4583,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Bảo hiểm sức khỏe PVI có hạn mức bao nhiêu cho nhân viên?",
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "avg_score": 0.4665,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+      "worst_metric": "faithfulness",
+      "score": 0.0,
+      "avg_score": 0.5,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Muốn mua thiết bị trị giá 55 triệu cần ai phê duyệt?",
+      "worst_metric": "context_recall",
+      "score": 0.0,
+      "avg_score": 0.5,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Nhân viên tạm ứng 15 triệu, sau 20 ngày mới thanh toán. Bị phạt bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.1667,
+      "avg_score": 0.6424,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Nhân viên được tài trợ khóa học 25 triệu, nghỉ việc sau 8 tháng hoàn thành khóa học. Phải hoàn trả bao nhiêu?",
+      "worst_metric": "faithfulness",
+      "score": 0.5,
+      "avg_score": 0.8234,
+      "diagnosis": "LLM hallucinating",
+      "suggested_fix": "Tighten prompt, lower temperature"
+    },
+    {
+      "question": "Nghỉ phép không lương 20 ngày cần ai phê duyệt?",
+      "worst_metric": "context_recall",
+      "score": 0.5,
+      "avg_score": 0.8288,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Có cần kích hoạt xác thực đa yếu tố (MFA) không?",
+      "worst_metric": "context_recall",
+      "score": 0.5,
+      "avg_score": 0.8345,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    }
+  ]
+}
